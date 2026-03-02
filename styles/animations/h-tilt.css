@@ -1,0 +1,7 @@
+.h-tilt{
+  transition: transform 0.5s ease;
+}
+
+.h-tilt:hover{
+  transform: rotate(-30deg);
+}

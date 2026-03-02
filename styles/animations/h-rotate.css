@@ -1,0 +1,7 @@
+.h-rotate{
+  transition: transform 0.5s ease;
+}
+
+.h-rotate:hover{
+  transform: rotate(90deg);
+}

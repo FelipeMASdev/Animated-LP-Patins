@@ -73,12 +73,22 @@ h2{
   line-height: 120%;
 }
 
-@media (width >= 1280px){
+.container{
+  width: 100vw;
+  padding-inline: 1.5rem;
+}
+
+@media (width >= 768px){
   :root{
     --fs-xl: 4rem;
     --fs-lg: 2.5rem;
     --fs-md: 1.25rem;
     --fs-sm: 1rem;
     --fs-xs: 0.875rem;
+  }
+
+  .container{
+    max-width: 1280px;
+    padding-inline: 2rem;
   }
 }
