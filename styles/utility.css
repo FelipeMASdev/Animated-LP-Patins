@@ -1,0 +1,23 @@
+.txt-md{
+  font-family: var(--ff-syne);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-bold);
+}
+
+.txt-xs{
+  font-family: var(--ff-montserrat);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+}
+
+.hl-joy{
+  color: var(--snitap-joy-mid);
+}
+
+.hl-sky{
+  color: var(--snitap-sky-mid);
+}
+
+.hl-leaf{
+  color: var(--snitap-leaf-mid);
+}

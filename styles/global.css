@@ -1,0 +1,84 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html{
+  line-height: 120%;
+  color: var(--color-highlights);
+  background-color: var(--color-background);
+}
+
+:root{
+  /* Variables */
+
+  /* colors */
+  --snitap-sun: #FFCD1E;
+  --snitap-sky-mid: #06B6D4;
+  --snitap-sky-light: #67E8F9;
+  --snitap-joy-mid: #DB2777;
+  --snitap-joy-light: #F472B6;
+  --snitap-leaf-mid: #16A34A;
+
+  --color-highlights: #000000;
+  --color-background: #FAFAFA;
+
+  --gradient-joysky: linear-gradient(
+    45deg, 
+    var(--snitap-joy-light) 0%, 
+    var(--snitap-sky-light) 100%
+  );
+
+  --gradient-skyjoy: linear-gradient(
+    45deg, 
+    var(--snitap-sky-light) 0%, 
+    var(--snitap-joy-light) 100%
+  );
+
+  /* typography */
+  --ff-syne: "Syne", sans-serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+
+  --fw-bold: 700;
+  --fw-medium: 500;
+
+  --fs-xl: 2rem;
+  --fs-lg: 1.5rem;
+  --fs-md: 1.25rem;
+  --fs-sm: 1rem;
+  --fs-xs: 0.75rem;
+}
+
+a, button{
+  font-size: var(--fs-sm);
+  font-family: var(--ff-montserrat);
+  line-height: 150%;
+  font-weight: var(--fw-medium);
+
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2{
+  font-size: var(--fs-xl);
+  font-family: var(--ff-syne);
+  line-height: 125%;
+  font-weight: var(--fw-bold);
+}
+
+h2{
+  font-size: var(--fs-lg);
+  line-height: 120%;
+}
+
+@media (width >= 1280px){
+  :root{
+    --fs-xl: 4rem;
+    --fs-lg: 2.5rem;
+    --fs-md: 1.25rem;
+    --fs-sm: 1rem;
+    --fs-xs: 0.875rem;
+  }
+}
