@@ -1,4 +1,5 @@
-@import url(h-rotate.css) (prefers-reduced-motion: no-preference);
-@import url(h-tilt.css) (prefers-reduced-motion: no-preference);
+@import url(h-rotate.css);
+@import url(h-tilt.css);
 @import url(upbouce.css) (prefers-reduced-motion: no-preference);
+@import url(slide-in.css) (prefers-reduced-motion: no-preference);
 

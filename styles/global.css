@@ -5,12 +5,6 @@
 
 }
 
-html{
-  line-height: 120%;
-  color: var(--color-highlights);
-  background-color: var(--color-background);
-}
-
 :root{
   /* Variables */
 
@@ -49,6 +43,16 @@ html{
   --fs-md: 1.25rem;
   --fs-sm: 1rem;
   --fs-xs: 0.75rem;
+}
+
+html{
+  line-height: 120%;
+  color: var(--color-highlights);
+  background-color: #F3F4F6;
+}
+
+.container{
+  background-color: var(--color-background);
 }
 
 a, button{

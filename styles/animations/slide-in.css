@@ -1,0 +1,45 @@
+.rollerskate{
+  --starting-distance: 200%;
+  --bounce-distance: -10%;
+
+  & img[src*="ellipse"]{
+    animation: slideIn 3s ease-out both;
+  }
+
+  & img[src*="rollerskate"]{
+    --starting-distance: 600%;
+    animation: slideIn 3s .1s ease-out both;
+  }
+
+  & img[src*="stars"]{
+    --starting-distance: 2000%;
+    --bounce-distance: -70%;
+    
+    animation: 
+      slideIn 3s .4s ease-out both,
+      fadeIn 2.5s 1.2s ease-out both;
+  }
+}
+
+@keyframes slideIn {
+  0%{
+    transform: translateX(var(--starting-distance));
+  }
+
+  50%{
+    transform: translateX(var(--bounce-distance));
+  }
+
+  100%{
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,6 +1,6 @@
 .a-upbounce span{
   --updistance: -2.5rem;
-  animation: upbounce 5.3s infinite ease-out;
+  animation: upbounce 5.3s 2s infinite ease-out;
 }
 
 @media (width >= 768px){
