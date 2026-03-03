@@ -74,8 +74,9 @@ h2{
 }
 
 .container{
-  width: 100vw;
+  width: 100%;
   padding-inline: 1.5rem;
+  margin-inline: auto;
 }
 
 @media (width >= 768px){

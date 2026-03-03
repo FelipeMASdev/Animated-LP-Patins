@@ -21,3 +21,8 @@
 .hl-leaf{
   color: var(--snitap-leaf-mid);
 }
+
+.flex{
+  display: flex;
+  align-items: center;
+}
