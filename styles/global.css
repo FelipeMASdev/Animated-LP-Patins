@@ -77,12 +77,6 @@ h2{
   line-height: 120%;
 }
 
-.container{
-  width: 100%;
-  padding-inline: 1.5rem;
-  margin-inline: auto;
-}
-
 @media (width >= 768px){
   :root{
     --fs-xl: 4rem;

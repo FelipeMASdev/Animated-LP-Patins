@@ -1,0 +1,9 @@
+.rolling{
+  animation: rolling 2s linear infinite;
+}
+
+@keyframes rolling {
+  to{
+    transform: translateX(-132px);
+  }
+}

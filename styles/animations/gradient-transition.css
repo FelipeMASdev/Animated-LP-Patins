@@ -1,0 +1,9 @@
+.gradient-transition {
+  animation: gradientTransition 20s ease infinite both;
+}
+
+@keyframes gradientTransition {
+  50% {
+    background-position: 100% 50%;
+  }
+}

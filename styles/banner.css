@@ -1,0 +1,31 @@
+.banner{
+
+  width: 100%;
+  padding-block: 1.5rem;
+  padding-inline: 0;
+  overflow: hidden;
+
+  .scroller{
+    width: 100%;
+    padding-block: 1rem;
+    overflow: hidden;
+
+    background: var(--gradient-skyjoy);
+    background-size: 400%;
+    background-position: 0% 50%;
+  }
+
+  .rolling{
+    gap: 1.5rem;
+
+    & img{
+      width: 109px;
+    }
+  }
+}
+
+@media (width >= 768px){
+  .banner{
+    padding-block: 2.5rem;
+  }
+}
