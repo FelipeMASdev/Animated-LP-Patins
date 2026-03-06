@@ -4,4 +4,5 @@
 @import url(slide-in.css) (prefers-reduced-motion: no-preference);
 @import url(rolling.css) (prefers-reduced-motion: no-preference);
 @import url(gradient-transition.css) (prefers-reduced-motion: no-preference);
-
+@import url(h-figure.css);
+@import url(image-appear.css) (prefers-reduced-motion: no-preference);

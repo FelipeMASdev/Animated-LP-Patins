@@ -1,0 +1,105 @@
+section.gallery{
+  width: 100%;
+  padding-block: 1.5rem;
+
+  & header{
+    text-align: center;
+  }
+
+  & header span{
+    font: var(--fs-xs)/150% var(--fw-medium) var(--ff-montserrat);
+  }
+
+  & .content{
+    margin-top: 1.5rem;
+
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  & figure{
+    line-height: 0;
+    border-radius: 2.5rem;
+    overflow: hidden;
+    
+    position: relative;
+
+    & > img {
+      width: 100%;
+      aspect-ratio: 19.5/16;
+      object-fit: cover;
+      border-radius: 2.5rem;
+    }
+  }
+
+  & figcaption{
+    font: var(--fs-xs)/160% var(--fw-medium) var(--ff-montserrat);
+    color: white;
+
+    justify-content: flex-end;
+    gap: .5rem;
+    padding: 1.5rem 2rem;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    background: linear-gradient(
+      to top,
+      rgb(0 0 0 / 0.75),
+      rgb(0 0 0 / 0)
+    );
+
+    & img{
+      width: 2rem;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media (width >= 768px){
+  section.gallery{
+    padding-block: 2.5rem 2rem;
+
+    & .content{
+      margin-top: 2rem;      
+    }
+  }
+}
+
+@media (width >= 940px){
+  section.gallery{
+    & .content{
+      display: grid;
+      gap: 2rem;
+
+      grid-template-areas: 
+        "A B B"
+        "C C D";
+    }
+
+    & figure{
+      & > img {
+        height: 25rem;
+      }
+
+      &:nth-child(1){
+        grid-area: A;
+      }
+
+      &:nth-child(2){
+        grid-area: B;
+      }
+
+      &:nth-child(3){
+        grid-area: C;
+      }
+
+      &:nth-child(4){
+        grid-area: D;
+      }
+    }
+  }
+}

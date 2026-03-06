@@ -1,0 +1,26 @@
+figure{
+  animation: imageAppear 1.7s 0.3s ease backwards;
+  animation-timeline: view();
+  animation-range: 50px 260px;
+}
+
+@media (width >= 768px){
+  figure{
+    animation: imageAppear 1.7s 0.3s ease backwards;
+    animation-timeline: view();
+    animation-range: 100px 350px;
+
+    &[data-delay]{
+      animation: imageAppear 1.7s 0.9s ease backwards;
+      animation-timeline: view();
+      animation-range: 200px 350px;
+    }
+  }
+}
+
+@keyframes imageAppear{
+  from{
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
