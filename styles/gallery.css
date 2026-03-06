@@ -7,7 +7,11 @@ section.gallery{
   }
 
   & header span{
-    font: var(--fs-xs)/150% var(--fw-medium) var(--ff-montserrat);
+    font-size: var(--fs-xs);
+    line-height: 150%;
+    font-weight: var(--fw-medium);
+    font-family: var(--ff-montserrat);
+    text-transform: uppercase;
   }
 
   & .content{
